@@ -18,7 +18,7 @@ def count_unique_words(file_path):
          unique_words.add(word.lower())
   return len(unique_words)
 result=count_unique_words(file_path)
-print("不:",result)
+print("有多少個不同的英文單字:",result)
 
 file_path="hw2_data.txt"
 def count_words(file_path):
@@ -34,6 +34,6 @@ def count_words(file_path):
             word_counts[word]=1
   return word_counts
 word_counts=count_words(file_path)
-print("無:")
+print("每個英文單字出現次數:")
 for word,count in word_counts.items():
   print(f"{word}:{count}")
